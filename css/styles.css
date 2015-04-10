@@ -21,7 +21,6 @@ font-family: 'Stint Ultra Condensed', cursive;
   -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
   box-sizing: border-box; /* IE */
 }
-
 /* Clear fix hack */
 .clearfix:after {
   content: ".";
@@ -38,12 +37,10 @@ font-family: 'Stint Ultra Condensed', cursive;
 
 .alignright {
 	float: right;
-	padding: 0 0 10px 10px; /* note the padding around a right floated image */
 }
 
 .alignleft {
 	float: left;
-	padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
 .absolute { /*this is formula for centering*/
@@ -70,9 +67,9 @@ body {
   color: #222;
   font-family: 'Alegreya', serif;
   line-height: 1.4;
-  margin: auto;
-  width: 95%;
-  overflow-x: hidden;
+  /*margin: auto;*/
+  /*width: 95%;*/
+  /*overflow-x: hidden;*/
 }
 
 h1, h2 {
@@ -96,17 +93,33 @@ ul {
 
 blockquote {
   font-family: 'Stint Ultra Condensed', cursive;
-  font-size: 1.5em;
+  font-size: 2em;
   letter-spacing: .02em;
+  margin: auto;
   padding: 80px 0;
   text-align: center;
-  width: 100%;
+  vertical-align: middle;
+  width: 80%;
 }
 
-blockquote>strong {
+.pullquote {
   color: gray;
   font-family: 'Alegreya', serif;
-  font-size: 3em;
+  font-size: 2em;
+  /*vertical-align: super;*/
+}
+
+.open-pullquote {
+  position: relative;
+  left: -.5em;
+  top: -.8em;
+
+}
+
+.close-pullquote {
+  position: relative;
+  left: .5em;
+  top: .3em;
 }
 
 /******************************************
@@ -117,50 +130,66 @@ blockquote>strong {
 
 header {
   background: url("../images/bg-header.jpg");
-  height: 800px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
 }
 
 .top-banner {
   background-color: white;
-  height: 60px;
-  margin: 0 0;
+  /*height: 60px;*/
+  /*width: 960;*/
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  top: 0;
+  /*margin: 0;*/
+  z-index: 999;
 }
+
 .top-banner h1 {
   font-size: 2.2em;
   margin: auto;
   padding-top: .25em;
-  padding-left: 5%;
+}
+
+.top-navigation {
+  float: right;
+  width: 100%;
 }
 
 .top-navigation a:hover {
   color: #32BAAE;
 }
 
-.top-navigation ul {
-  padding-right: 20%;
-}
-
 .top-navigation li {
-  display: inline;
+  display: inline-block;
   font-family: 'Stint Ultra Condensed', cursive;
   font-size: 1.3em;
   letter-spacing: .05em;
-  margin: 10px;
+  margin-left: 10px;
   text-transform: uppercase;
   vertical-align: middle;
+  /* diamond bullet formatting */
+  padding-left: 30px;
+  background-image: url("../graphics/bullet-diamond.png");
+  background-repeat: no-repeat;
+  background-position: 0 .3em;
+  /*overflow: hidden;*/
+}
+
+.top-navigation li:first-child {
+  background-image: none;
 }
 
 .facebook-icon {
-  height: 30px;
-  vertical-align: middle;
+  height: 25px;
+  vertical-align: top;
 }
 
-.bullet-diamond{
+/*.bullet-diamond{
   width: 8px;
-}
+}*/
 
 /* ---MAIN --- */
 
@@ -168,7 +197,7 @@ header {
   font-size: 1.3em;
   margin: auto;
   text-align: center;
-  width: 60%;
+  width: 80%;
 }
 
 .decorative-head {
@@ -189,7 +218,7 @@ header {
 .menu-section {
   font-size: 1.3em;
   margin-left: 5%;
-  width: 40%;
+  /*width: 40%;*/
 }
 
 .menu-section h1 {
@@ -218,22 +247,33 @@ header {
 }
 
 .menu-section ul {
-  border-bottom: 1pt solid #F6AF33;
+  border-bottom: 2pt solid #F6AF33;
   padding-left: 0;
-  padding-bottom: 25px;
+  /*padding-bottom: 25px;*/ /*turn this on when turning off accordian folding menu */
+}
+
+.menu-section .menu-no-border {
+  border-bottom: 0pt;
 }
 
 .menu-section li {
   position: relative; /*this is for lining up price */
 }
 
-.menu-section ul>li>p {
-  line-height: 1.2em;
-  margin-bottom: 0;
-  margin-top: 0;
+.accordian-menu li {
+  display: none;
 }
 
-.menu-section ul>li>p:first-child {
+.accordian-menu ul {
+  padding-bottom: 0;
+}
+
+.menu-section p {
+  line-height: 1.2em;
+  margin: 0;
+}
+
+.menu-section p:first-child {
   margin-top: .5em;
 }
 
@@ -256,18 +296,19 @@ header {
   text-align: right;
 }
 
-.menuCarousel {
-  width: 40%;
+.menu-carousel {
+  overflow: hidden;
 }
 
-.wineSection {
+.wine-section {
   border-width: 18px;
+  border-style: solid;
   border-image: url("../graphics/squiggle-border-image.png") 19 0 19 0 repeat;
   margin: 80px auto;
-  width: 95%;
+  /*width: 95%;*/
 }
 
-.wineSection h2 {
+.wine-section h2 {
   color: #32BAAE;
   font-family: 'Stint Ultra Condensed', cursive;
   font-size: 2em;
@@ -276,19 +317,25 @@ header {
   text-align: center;
 }
 
-.windowSection {
+.divider-image-section {
   height: 460px;
   margin: 80px 0;
 }
 
-.window-two {
+.divider-image-one {
   background: url("../images/ambiance.jpg");
   background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.window-two {
+.divider-image-two {
   background: url("../images/ambiance5.jpg");
   background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* --- FOOTER --- */
@@ -297,7 +344,7 @@ footer {
   background-color: #32BAAE;
   color: white;
   padding: 40px;
-  position: relative;
+  /*position: relative;*/
   /*border-width: 62px;*/
   /*border-image: url("../graphics/pattern-bottom.svg") 0 0 62 0 repeat;*/
   margin: 80px auto;
@@ -309,25 +356,20 @@ footer h1 {
 }
 
 footer h2 {
-  font-size: 2.3em;
+  font-size: 2.1em;
   color: #F6AF33;
 }
 
 footer h3 {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: .5em 0 0 0;
   padding: 0;
 }
 
 footer p {
   color: white;
-  font-size: 1em;
-  margin: auto;
-}
-
-.contact-section {
-  width: 95%;
+  font-size: .8em;
   margin: auto;
 }
 
@@ -346,8 +388,15 @@ footer p {
   vertical-align: middle;
 }
 
+.contact-street p {
+  font-size: .7em;
+}
 .contact-email img, .contact-hours img {
   width: 32px;
+}
+
+.contact-email h3 {
+  font-size: .8em;
 }
 
 .contact-social img {
@@ -355,7 +404,9 @@ footer p {
 }
 
 .contact-map img{
-  width: 60%;
+  width: 100%;
+  margin-top: 2.3em;
+  margin-left: 0;
 }
 
 .contact-phone p {
@@ -363,7 +414,7 @@ footer p {
   top: -3.6em;
 }
 
-.contact-email h3, .contact-social h3 {
+.contact-social h3 {
   font-size: 1em;
 }
 
