@@ -302,6 +302,7 @@ header {
 
 .wine-section {
   border-width: 18px;
+  border-style: solid;
   border-image: url("../graphics/squiggle-border-image.png") 19 0 19 0 repeat;
   margin: 80px auto;
   /*width: 95%;*/
