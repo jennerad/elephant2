@@ -67,9 +67,6 @@ body {
   color: #222;
   font-family: 'Alegreya', serif;
   line-height: 1.4;
-  /*margin: auto;*/
-  /*width: 95%;*/
-  /*overflow-x: hidden;*/
 }
 
 h1, h2 {
@@ -129,32 +126,18 @@ blockquote {
 /* ---HEADER --- */
 
 header {
-  background: url("../images/bg-header.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-}
-
-.top-banner {
   background-color: white;
+  display: block;
   height: 60px;
-  width: 960;
-  /*width: 100%;*/
-  /*top: 0;*/
-  /*margin: 0;*/
+  position: fixed;
+  width: 960px;
   z-index: 999;
 }
 
-.top-banner h1 {
+header h1 {
   font-size: 2.2em;
   margin: auto;
   padding-top: .25em;
-}
-
-.top-navigation {
-  /*float: right;*/
-  /*width: 100%;*/
 }
 
 .top-navigation a:hover {
@@ -182,7 +165,7 @@ header {
 
 .facebook-icon {
   height: 25px;
-  /*vertical-align: top;*/
+  vertical-align: top;
 }
 
 /*.bullet-diamond{
@@ -190,6 +173,14 @@ header {
 }*/
 
 /* ---MAIN --- */
+
+.hero {
+  background: url("../images/bg-header.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
 
 .about-section {
   font-size: 1.3em;
