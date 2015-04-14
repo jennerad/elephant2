@@ -138,11 +138,10 @@ header {
 
 .top-banner {
   background-color: white;
-  /*height: 60px;*/
-  /*width: 960;*/
-  position: fixed;
-  width: 100%;
-  top: 0;
+  height: 60px;
+  width: 960;
+  /*width: 100%;*/
+  /*top: 0;*/
   /*margin: 0;*/
   z-index: 999;
 }
@@ -154,8 +153,8 @@ header {
 }
 
 .top-navigation {
-  float: right;
-  width: 100%;
+  /*float: right;*/
+  /*width: 100%;*/
 }
 
 .top-navigation a:hover {
@@ -175,7 +174,6 @@ header {
   background-image: url("../graphics/bullet-diamond.png");
   background-repeat: no-repeat;
   background-position: 0 .3em;
-  /*overflow: hidden;*/
 }
 
 .top-navigation li:first-child {
@@ -184,7 +182,7 @@ header {
 
 .facebook-icon {
   height: 25px;
-  vertical-align: top;
+  /*vertical-align: top;*/
 }
 
 /*.bullet-diamond{
@@ -418,9 +416,17 @@ footer p {
   font-size: 1em;
 }
 
+.colophon {
+  padding: 0;
+}
+
 .colophon img {
-  margin: auto -5%;
-  padding: 60px 0 10px;
+  /*height: 100%;*/
+  width: 960px;
+  margin-left: -40px;
+  overflow: hidden;
+  /*margin: auto -5%;*/
+  /*padding: 60px 0 10px;*/
 }
 
 .colophon p {
