@@ -1,0 +1,105 @@
+
+/* --- CALL OUT SECTION WITH SQUIGGLE GRAPHIC AND BOLD HEAD --- */
+
+.graphic-section {
+  border-width: 18px 0px;
+  border-style: solid;
+  border-image: url("../graphics/squiggle-border-image.png") 19 0 19 0 repeat;
+  margin: 70px auto 10px;
+}
+
+.graphic-section-subhead {
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 2em;
+  letter-spacing: .02em;
+  margin: 40px 0;
+  text-align: center;
+}
+
+/*PULLQUOTE*/
+
+.pullquote {
+  font-family: 'Alegreya', serif;
+  font-size: 2em;
+  position: relative;
+}
+
+.open-pullquote {
+  left: -.5em;
+  top: -.8em;
+}
+
+.close-pullquote {
+  left: .5em;
+  top: .3em;
+}
+
+/* PHOTO DIVIDERS */
+
+.divider-image-section {
+  height: 460px;
+  margin: 80px 0;
+}
+
+.divider-image-one {
+  background: url("../images/ambiance.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.divider-image-two {
+  background: url("../images/ambiance5.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* PHOTO CAROUSEL */
+
+.photo-carousel {
+  overflow: hidden;
+}
+
+/* --- MENU --- */
+
+.menu-section {
+  font-size: 1.3em;
+}
+
+.accordian-menu { /* this is the ul for each category */
+  border-bottom: 2pt solid #F6AF33;
+  line-height: 1.2em;
+}
+
+.menu-section-subhead { /* this is the category head */
+  font-size: 1.8em;
+  margin: .5em 0;
+}
+
+.accordian-menu-item{ /* this includes the item, descr, and price */
+  position: relative; /* this is so that menu-price lines up */
+}
+
+.accordian-menu-item > p {
+  margin: 0;
+}
+
+.menu-item { /* this is the menu item name */
+  font-family: 'Stint Ultra Condensed', cursive;
+  letter-spacing: .02em;
+}
+
+.menu-item:first-child {
+  margin-top: .5em;
+}
+
+.menu-price {
+  font-family: 'Stint Ultra Condensed', cursive;
+  text-align: right;
+  position: absolute; /* this is so that menu-price lines up */
+  top: 0;
+  right: 0;
+}

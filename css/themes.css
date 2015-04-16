@@ -1,0 +1,24 @@
+.smaller {
+  font-size: .8em;
+}
+
+.reverse {
+  color: white;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+/* COLORS */
+.accent-color-1 { /*teal*/
+  color: #32BAAE;
+}
+
+.accent-color-2 { /*gold*/
+  color: #F6AF33;
+}
+
+.accent-color-3 { /*gray*/
+  color: #999;
+}
