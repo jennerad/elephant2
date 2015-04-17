@@ -1,5 +1,145 @@
+/* this file contains */
+/*  1. Header */
+/*  2. Nav */
+/*  3. Sections */
+/*  4. Menu */
+/*  5. Footer */
+/*  6. Graphic border */
+/*  7. Pullquote */
+/*  8. Photo sections */
 
-/* --- CALL OUT SECTION WITH SQUIGGLE GRAPHIC AND BOLD HEAD --- */
+/* --- HEADER --- */
+
+.fixed-header {
+  background-color: white;
+}
+
+.logo {
+  font-size: 2.2em;
+}
+
+/* --- NAVIGATION --- */
+
+.top-navigation-item {
+  display: inline-block;
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 1.3em;
+  letter-spacing: .05em;
+  margin-left: 10px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  /* diamond bullet formatting */
+  padding-left: 1.3em;
+  background-image: url("../graphics/bullet-diamond.png");
+  background-repeat: no-repeat;
+  background-position: 0 .3em;
+}
+
+.top-navigation-item:first-child {
+  background-image: none;
+}
+
+/* --- MAIN --- */
+
+.hero {
+  background: url("../images/bg-header.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-head {
+  line-height: .25em;
+  padding-bottom: .5em;
+}
+
+.section-head-decorative {
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 2.2em;
+  line-height: .25em;
+  padding-top: 2em;
+}
+
+/* --- MENU --- */
+
+  .menu-category { /* this is the ul for each category */
+    border-bottom: 2pt solid #F6AF33;
+    line-height: 1.2em;
+  }
+
+    .menu-section-subhead { /* this is the category head */
+      font-size: 1.8em;
+      margin: .5em 0;
+    }
+
+    .accordian-menu-item{ /* this includes the item, descr, and price */
+      position: relative; /* this is so that menu-price lines up */
+    }
+
+      .accordian-menu-item > p {
+        margin: 0;
+      }
+
+      .menu-item { /* this is the menu item name */
+        font-family: 'Stint Ultra Condensed', cursive;
+        letter-spacing: .02em;
+      }
+
+      .menu-item:first-child {
+        margin-top: .5em;
+      }
+
+      .menu-price {
+        font-family: 'Stint Ultra Condensed', cursive;
+        text-align: right;
+        position: absolute; /* this is so that menu-price lines up */
+        top: 0;
+        right: 0;
+      }
+
+/* --- FOOTER --- */
+
+.footer-contact {
+  background-color: #32BAAE;
+  padding: 40px;
+  margin: 80px auto;
+}
+
+  .footer-head {
+    font-size: 4.4em;
+    margin: auto;
+  }
+
+  .footer-subhead {
+    font-size: 2.1em;
+  }
+
+  .footer-topic {
+    font-size: 1.3em;
+    margin: .5em 0 0 0;
+    text-indent: 35px;
+    position: relative;
+    top: -2em;
+  }
+
+  .footer-details {
+    text-indent: 35px;
+    position: relative;
+    top: -3.25em;
+  }
+
+  .icons { /*street, phone */
+    max-width: 24px;
+    max-height: 30px;
+    vertical-align: top;
+  }
+
+  .contact-map{
+    width: 100%;
+    margin-top: 2.3em;
+  }
+
+/* --- FEATURED HEAD WITH SQUIGGLE GRAPHIC AND BOLD HEAD --- */
 
 .graphic-section {
   border-width: 18px 0px;
@@ -8,15 +148,15 @@
   margin: 70px auto 10px;
 }
 
-.graphic-section-subhead {
-  font-family: 'Stint Ultra Condensed', cursive;
-  font-size: 2em;
-  letter-spacing: .02em;
-  margin: 40px 0;
-  text-align: center;
-}
+  .graphic-section-subhead {
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 2em;
+    letter-spacing: .02em;
+    margin: 40px 0;
+    text-align: center;
+  }
 
-/*PULLQUOTE*/
+/* --- PULLQUOTE --- */
 
 .pullquote {
   font-family: 'Alegreya', serif;
@@ -34,72 +174,31 @@
   top: .3em;
 }
 
-/* PHOTO DIVIDERS */
+/* --- PHOTO DIVIDERS --- */
 
 .divider-image-section {
   height: 460px;
   margin: 80px 0;
 }
 
-.divider-image-one {
-  background: url("../images/ambiance.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+  .divider-image-one {
+    background: url("../images/ambiance.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
-.divider-image-two {
-  background: url("../images/ambiance5.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+  .divider-image-two {
+    background: url("../images/ambiance5.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
-/* PHOTO CAROUSEL */
+/* --- PHOTO CAROUSEL --- */
 
 .photo-carousel {
   overflow: hidden;
-}
-
-/* --- MENU --- */
-
-.menu-section {
-  font-size: 1.3em;
-}
-
-.accordian-menu { /* this is the ul for each category */
-  border-bottom: 2pt solid #F6AF33;
-  line-height: 1.2em;
-}
-
-.menu-section-subhead { /* this is the category head */
-  font-size: 1.8em;
-  margin: .5em 0;
-}
-
-.accordian-menu-item{ /* this includes the item, descr, and price */
-  position: relative; /* this is so that menu-price lines up */
-}
-
-.accordian-menu-item > p {
-  margin: 0;
-}
-
-.menu-item { /* this is the menu item name */
-  font-family: 'Stint Ultra Condensed', cursive;
-  letter-spacing: .02em;
-}
-
-.menu-item:first-child {
-  margin-top: .5em;
-}
-
-.menu-price {
-  font-family: 'Stint Ultra Condensed', cursive;
-  text-align: right;
-  position: absolute; /* this is so that menu-price lines up */
-  top: 0;
-  right: 0;
 }

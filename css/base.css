@@ -55,8 +55,7 @@ hgroup,
 main,
 menu,
 nav,
-section,
-summary {
+section {
   display: block;
 }
 
@@ -78,10 +77,10 @@ video {
  * Remove excess height in iOS 5 devices.
  */
 
-audio:not([controls]) {
+/*audio:not([controls]) {
   display: none;
   height: 0;
-}
+}*/
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
@@ -428,53 +427,20 @@ th {
   padding: 0;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-.clear {
-  clear: both;
-}
-
-.alignright {
-  float: right;
-}
-
-.alignleft {
-  float: left;
-}
-
-.absolute { /*this is formula for centering*/
-  text-align: center;
-  margin: auto;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 
 /******************************************
 --- BASE STYLES ---
 /*******************************************/
 
-html {
-  border: 0;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-}
+/* ---TEXT--- */
 
-body {
-  color: #222;
+html {
+  font-size: 16px;
   font-family: 'Alegreya', serif;
   line-height: 1.4;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2 {
@@ -487,10 +453,6 @@ p, a {
   color: #222;
 }
 
-a {
-  text-decoration: none;
-}
-
 ul {
   list-style: none;
 }
@@ -499,9 +461,34 @@ blockquote {
   font-family: 'Stint Ultra Condensed', cursive;
   font-size: 2em;
   letter-spacing: .02em;
-  margin: auto;
-  padding: 80px 0;
   text-align: center;
   vertical-align: middle;
-  width: 80%;
 }
+
+.smaller {
+  font-size: .8em;
+}
+
+.bigger {
+  font-size: 1.5em;
+}
+
+/* ---COLORS--- */
+.accent-color-1 { /*teal*/
+  color: #32BAAE;
+}
+
+.accent-color-2 { /*gold*/
+  color: #F6AF33;
+}
+
+.accent-color-3 { /*gray*/
+  color: #999;
+}
+
+/* ---OTHER/GENERAL--- */
+
+.reverse {
+  color: white;
+}
+

@@ -1,5 +1,8 @@
 /* this file contains */
 /* 1. Skeleton Grid */
+/* 2. Clearfix */
+/* 3. Header */
+/* 4. Other */
 
 /*
 * Skeleton V2.0.4
@@ -99,7 +102,7 @@
 }
 
 /* Utilities */
-.u-full-width {
+/*.u-full-width {
   width: 100%;
   box-sizing: border-box; }
 .u-max-full-width {
@@ -108,7 +111,7 @@
 .u-pull-right {
   float: right; }
 .u-pull-left {
-  float: left; }
+  float: left; }*/
 
 
 /* Self Clearing Goodness */
@@ -119,15 +122,53 @@
   display: table;
   clear: both; }
 
+/************************************/
 
-/******************************************
---- LAYOUT ---
-/*******************************************/
+/* --- CLEAR FIX HACK --- */
 
-/* ---HEADER --- */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.absolute { /*this is formula for centering within a relatively positioned parent object*/
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* --- HEADER --- */
+
+.logo {
+  margin: auto;
+  padding-top: .25em;
+}
+
+.hero {
+  height: 600px;
+}
 
 .fixed-header {
-  background-color: white;
   display: block;
   height: 60px;
   position: fixed;
@@ -135,113 +176,31 @@
   z-index: 999;
 }
 
-.logo {
-  font-size: 2.2em;
-  margin: auto;
-  padding-top: .25em;
-}
-
-.top-navigation-item {
-  display: inline-block;
-  font-family: 'Stint Ultra Condensed', cursive;
-  font-size: 1.3em;
-  letter-spacing: .05em;
-  margin-left: 10px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  /* diamond bullet formatting */
-  padding-left: 30px;
-  background-image: url("../graphics/bullet-diamond.png");
-  background-repeat: no-repeat;
-  background-position: 0 .3em;
-}
-
-.top-navigation-item:first-child {
-  background-image: none;
-}
-
-/******************************************
- ---MAIN ---
-/******************************************/
-
-.hero {
-  background: url("../images/bg-header.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-}
+/* --- MAIN --- */
 
 .about-section {
-  font-size: 1.3em;
-  margin: auto;
-  text-align: center;
   width: 80%;
 }
 
-.decorative-head {
-  font-family: 'Stint Ultra Condensed', cursive;
-  font-size: 2.2em;
-  line-height: .25em;
-  margin: auto;
-  padding-top: 2em;
+/* --- OTHER/GENERAL --- */
+
+blockquote {
+  padding: 80px 0;
+  width: 80%;
 }
 
-.section-head {
-  line-height: .25em;
-  padding-bottom: .5em;
-}
-
-/* --- FOOTER --- */
-
-.footer-contact {
-  background-color: #32BAAE;
-  padding: 40px;
-  margin: 80px auto;
-}
-
-.footer-head {
-  font-size: 4.4em;
+.no-padding {
+  padding: 0px;
   margin: 0;
-}
-
-.footer-subhead {
-  font-size: 2.1em;
-}
-
-.footer-topic {
-  font-size: 1.3em;
-  margin: .5em 0 0 0;
-  text-indent: 35px;
-  position: relative;
-  top: -2em;
-}
-
-.footer-details {
-  margin: auto 0;
-  text-indent: 35px;
-  position: relative;
-  top: -3.25em;
-}
-
-.icons { /*street, phone */
-  max-width: 24px;
-  max-height: 30px;
-  vertical-align: top;
-}
-
-.contact-map{
-  width: 100%;
-  margin-top: 2.3em;
-  margin-left: 0;
-}
-
-.colophon {
-  margin-top: 40px;
 }
 
 .graphic-fullwidth {
   width: 960px;
   margin-left: -40px;
   margin-bottom: 10px;
+}
+
+.centered {
+  margin: auto;
+  text-align: center;
 }
