@@ -465,11 +465,11 @@ blockquote {
   vertical-align: middle;
 }
 
-.smaller {
+.smaller-text {
   font-size: .8em;
 }
 
-.bigger {
+.bigger-text {
   font-size: 1.5em;
 }
 

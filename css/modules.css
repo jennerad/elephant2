@@ -105,7 +105,7 @@
   margin: 80px auto;
 }
 
-  .footer-head {
+  .footer h1 {
     font-size: 4.4em;
     margin: auto;
   }
@@ -128,7 +128,7 @@
     top: -3.25em;
   }
 
-  .icons { /*street, phone */
+  .footer-icons { /*street, phone */
     max-width: 24px;
     max-height: 30px;
     vertical-align: top;
