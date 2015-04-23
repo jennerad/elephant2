@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+}
+
+.top-navigation-link:hover {
+  color: #32BAAE;
+}
+
+.menu-intro-link:hover {
+  color: #F6AF33;
+}
+
+.menu-section-subhead:hover {
+  color: #F6AF33;
+}
+
+ /*Use JS to toggle both of these when each accordian-menu-item is clicked. */
+
+.accordian-menu-item{
+  /*display: none;*/
+}
+
+.accordian-menu-item:last-child {
+  padding-bottom: 25px;
+;

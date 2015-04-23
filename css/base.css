@@ -1,4 +1,20 @@
+/* this file contains */
+/* 1. Box Model Hack */
+/* 2. Normalize */
+/* 3. Base Styles */
+
+/******************************************
+/* Box Model Hack */
+/******************************************/
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/******************************************
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/******************************************/
 
 /**
  * 1. Set default font family to sans-serif.
@@ -13,15 +29,13 @@ html {
 }
 
 /**
- * Remove default margin.
- */
+ * Remove default margin. */
 
 body {
   margin: 0;
 }
 
-/* HTML5 display definitions
-   ========================================================================== */
+/* HTML5 display definitions */
 
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.
@@ -41,8 +55,7 @@ hgroup,
 main,
 menu,
 nav,
-section,
-summary {
+section {
   display: block;
 }
 
@@ -64,10 +77,10 @@ video {
  * Remove excess height in iOS 5 devices.
  */
 
-audio:not([controls]) {
+/*audio:not([controls]) {
   display: none;
   height: 0;
-}
+}*/
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
@@ -79,10 +92,8 @@ template {
   display: none;
 }
 
-/* Links
-   ========================================================================== */
+/* Links /*
 
-/**
  * Remove the gray background color from active links in IE 10.
  */
 
@@ -99,10 +110,8 @@ a:hover {
   outline: 0;
 }
 
-/* Text-level semantics
-   ========================================================================== */
+/* Text-level semantics /*
 
-/**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 
@@ -174,10 +183,8 @@ sub {
   bottom: -0.25em;
 }
 
-/* Embedded content
-   ========================================================================== */
+/* Embedded content /*
 
-/**
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
@@ -193,10 +200,8 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/* Grouping content
-   ========================================================================== */
+/* Grouping content /*
 
-/**
  * Address margin not present in IE 8/9 and Safari.
  */
 
@@ -234,10 +239,8 @@ samp {
   font-size: 1em;
 }
 
-/* Forms
-   ========================================================================== */
+/* Forms /*
 
-/**
  * Known limitation: by default, Chrome and Safari on OS X allow very limited
  * styling of `select`, unless a `border` property is set.
  */
@@ -409,10 +412,8 @@ optgroup {
   font-weight: bold;
 }
 
-/* Tables
-   ========================================================================== */
+/* Tables /*
 
-/**
  * Remove most spacing between table cells.
  */
 
@@ -425,3 +426,69 @@ td,
 th {
   padding: 0;
 }
+
+
+/******************************************
+--- BASE STYLES ---
+/*******************************************/
+
+/* ---TEXT--- */
+
+html {
+  font-size: 16px;
+  font-family: 'Alegreya', serif;
+  line-height: 1.4;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2 {
+  font-size: 3.2em;
+  font-family: 'Amatic SC', cursive;
+  vertical-align: middle;
+}
+
+p, a {
+  color: #222;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote {
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 2em;
+  letter-spacing: .02em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.smaller-text {
+  font-size: .8em;
+}
+
+.bigger-text {
+  font-size: 1.5em;
+}
+
+/* ---COLORS--- */
+.accent-color-1 { /*teal*/
+  color: #32BAAE;
+}
+
+.accent-color-2 { /*gold*/
+  color: #F6AF33;
+}
+
+.accent-color-3 { /*gray*/
+  color: #999;
+}
+
+/* ---OTHER/GENERAL--- */
+
+.reverse {
+  color: white;
+}
+
