@@ -37,12 +37,12 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="row fixed-header">
+    <header id="navWrapper" class="hidden row fixed-header">
       <div class="three columns">
-        <h1 class="logo">&Eacute;L&Eacute;PHANT</h1>
+        <h1 class="logo"><a href="#heroSection" class="top-navigation-link">&Eacute;L&Eacute;PHANT</a></h1>
       </div>
       <div class="nine columns">
-        <nav class="alignright">
+        <nav id-"nav" class="alignright">
           <ul>
             <li class="top-navigation-item"><a href="#aboutSection" class="top-navigation-link">&agrave; propos</a></li>
             <!-- <img src="graphics/bullet-diamond.png" alt="decorative bullet" class="bullet-diamond"> -->
@@ -58,7 +58,7 @@
       </div>
     </header>
     <main>
-      <div class="hero">
+      <div class="hero" id="heroSection">
       </div>
       <section id="aboutSection" class="about-section bigger-text centered">
         <div class="row">
@@ -71,236 +71,258 @@
       </section>
       <div class="divider-image-section divider-image-one">
       </div>
-      <section id="menuSection">
+      <section id="menuSection" class="nav-link">
         <div class="row">
           <div class="six columns">
             <section class="bigger-text">
               <h1 class="section-head accent-color-2">NOTRE MENU</h1>
               <p>Menu midi à l&#8217;ardoise, changeant à toutes les semaines selon la saison et les arrivages locaux. Possibilité de "take-out" midi &amp; soir, servi dans des contenants écologiques.</p>
               <p><a class="accent-color-1" href="http://www.facebook.com/restaurantelephant">Visitez notre page facebook</a> pour voir notre formule midi.</p>
-              <ul class="no-padding">
-                <li><h2 class="menu-section-subhead accent-color-1">SOUPES<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">SOUP DU JOUR</p>
-                      <p class="menu-price">03</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">COURGE CAROTTE</p>
-                      <p class="smaller-text accent-color-3">Courge butternut, coco.</p>
-                      <p class="menu-price">03</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">LENTILLES, BOUILLON D&#8217;AGNEAU</p>
-                      <p class="smaller-text accent-color-3">L&eacute;gumes, piments forts.</p>
-                      <p class="menu-price">03</p>
-                    </li>
-                  </ul>
+              <ul class="no-padding accordian">
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">SOUPES<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SOUP DU JOUR</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">COURGE CAROTTE</p>
+                        <p class="smaller-text accent-color-3">Courge butternut, coco.</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LENTILLES, BOUILLON D&#8217;AGNEAU</p>
+                        <p class="smaller-text accent-color-3">L&eacute;gumes, piments forts.</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">ENTR&Eacute;ES<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">SAMOSA AGNEAU</p>
-                      <p class="smaller-text accent-color-3">Pois, pommes de terre, citron.</p>
-                      <p class="menu-price">04</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">FISH CAKES</p>
-                      <p class="smaller-text accent-color-3">Croquettes de poisson, herbes fraîches, mayo &eacute;pic&eacute;e.</p>
-                      <p class="menu-price">05</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">CRAB CAKES</p>
-                      <p class="smaller-text accent-color-3">Croquettes de crabe, mayo &eacute;pic&eacute;e.</p>
-                      <p class="menu-price">05</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">HUMMUS</p>
-                      <p class="smaller-text accent-color-3">Taboul&eacute; chou-fleur, oignons confits.</p>
-                      <p class="menu-price">03</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">SALADE FRA&Icirc;CHE</p>
-                      <p class="smaller-text accent-color-3">Mesclun, l&eacute;gumes croquants, dattes.</p>
-                      <p class="menu-price">04</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">FISH PAKORA</p>
-                      <p class="smaller-text accent-color-3">Mahi mahi frit, paprika fum&eacute;.</p>
-                      <p class="menu-price">05</p>
-                    </li>
-                  </ul>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">ENTR&Eacute;ES<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SAMOSA AGNEAU</p>
+                        <p class="smaller-text accent-color-3">Pois, pommes de terre, citron.</p>
+                        <p class="menu-price">04</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">FISH CAKES</p>
+                        <p class="smaller-text accent-color-3">Croquettes de poisson, herbes fraîches, mayo &eacute;pic&eacute;e.</p>
+                        <p class="menu-price">05</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CRAB CAKES</p>
+                        <p class="smaller-text accent-color-3">Croquettes de crabe, mayo &eacute;pic&eacute;e.</p>
+                        <p class="menu-price">05</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">HUMMUS</p>
+                        <p class="smaller-text accent-color-3">Taboul&eacute; chou-fleur, oignons confits.</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SALADE FRA&Icirc;CHE</p>
+                        <p class="smaller-text accent-color-3">Mesclun, l&eacute;gumes croquants, dattes.</p>
+                        <p class="menu-price">04</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">FISH PAKORA</p>
+                        <p class="smaller-text accent-color-3">Mahi mahi frit, paprika fum&eacute;.</p>
+                        <p class="menu-price">05</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">VEGAN<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">CURRY L&Eacute;GUMES</p>
-                      <p class="smaller-text accent-color-3">Lait de coco, curry vert.</p>
-                      <p class="menu-price">08</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">DHAL</p>
-                      <p class="smaller-text accent-color-3">Mijot&eacute; de lentilles, l&eacute;gumes.</p>
-                      <p class="menu-price">07</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">CURRY POIS CHICHES</p>
-                      <p class="smaller-text accent-color-3">Coco, cardamome, tamarin.</p>
-                      <p class="menu-price">08</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">SALADE NOIX-DATTES</p>
-                      <p class="smaller-text accent-color-3">Mesclun, l&eacute;gumes croquants.</p>
-                      <p class="menu-price">09</p>
-                    </li>
-                  </ul>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">VEGAN<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CURRY L&Eacute;GUMES</p>
+                        <p class="smaller-text accent-color-3">Lait de coco, curry vert.</p>
+                        <p class="menu-price">08</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">DHAL</p>
+                        <p class="smaller-text accent-color-3">Mijot&eacute; de lentilles, l&eacute;gumes.</p>
+                        <p class="menu-price">07</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CURRY POIS CHICHES</p>
+                        <p class="smaller-text accent-color-3">Coco, cardamome, tamarin.</p>
+                        <p class="menu-price">08</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SALADE NOIX-DATTES</p>
+                        <p class="smaller-text accent-color-3">Mesclun, l&eacute;gumes croquants.</p>
+                        <p class="menu-price">09</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">CURRY<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">POULET AU BEURRE</p>
-                      <p class="smaller-text accent-color-3">Sauce cr&eacute;meuse, cardamome.</p>
-                      <p class="menu-price">13</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">AGNEAU KORMA</p>
-                      <p class="smaller-text accent-color-3">Sauce au yogourt, noix torr&eacute;fi&eacute;es.</p>
-                      <p class="menu-price">15</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">CURRY VERT DE CREVETTES</p>
-                      <p class="smaller-text accent-color-3">Lime k&eacute;fir, citronelle, basilic tha&iuml;.</p>
-                      <p class="menu-price">12</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">POISSON MANGUE &amp; YOGOURT</p>
-                      <p class="smaller-text accent-color-3">Poisson blanc, sauce tomat&eacute;e.</p>
-                      <p class="menu-price">12</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">POPEYE PANEER</p>
-                      <p class="smaller-text accent-color-3">Pur&eacute;e d&#8217;&eacute;pinards, piments forts, fromage grill&eacute;.</p>
-                      <p class="menu-price">09</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">PILON DE POULET TIKA</p>
-                      <p class="smaller-text accent-color-3">&Eacute;pices tika masala, citron, mayo.</p>
-                      <p class="menu-price">12</p>
-                    </li>
-                  </ul>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">CURRY<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">POULET AU BEURRE</p>
+                        <p class="smaller-text accent-color-3">Sauce cr&eacute;meuse, cardamome.</p>
+                        <p class="menu-price">13</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">AGNEAU KORMA</p>
+                        <p class="smaller-text accent-color-3">Sauce au yogourt, noix torr&eacute;fi&eacute;es.</p>
+                        <p class="menu-price">15</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CURRY VERT DE CREVETTES</p>
+                        <p class="smaller-text accent-color-3">Lime k&eacute;fir, citronelle, basilic tha&iuml;.</p>
+                        <p class="menu-price">12</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">POISSON MANGUE &amp; YOGOURT</p>
+                        <p class="smaller-text accent-color-3">Poisson blanc, sauce tomat&eacute;e.</p>
+                        <p class="menu-price">12</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">POPEYE PANEER</p>
+                        <p class="smaller-text accent-color-3">Pur&eacute;e d&#8217;&eacute;pinards, piments forts, fromage grill&eacute;.</p>
+                        <p class="menu-price">09</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">PILON DE POULET TIKA</p>
+                        <p class="smaller-text accent-color-3">&Eacute;pices tika masala, citron, mayo.</p>
+                        <p class="menu-price">12</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">RIZ<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">CITRON-CANNELLE-CURCUMA</p>
-                      <p class="menu-price">02</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">SAFRAN-GIROFLE</p>
-                      <p class="menu-price">03</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">NATURE</p>
-                      <p class="menu-price">02</p>
-                    </li>
-                  </ul>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">RIZ<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CITRON-CANNELLE-CURCUMA</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SAFRAN-GIROFLE</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">NATURE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">CHUTNEY &amp; YOGOURT<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">CHUTNEY MANGUE</p>
-                      <p class="menu-price">02</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">YOGOURT CORIANDRE-MENTHE</p>
-                      <p class="menu-price">02</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">YOGOURT BLANC</p>
-                      <p class="menu-price">01</p>
-                    </li>
-                  </ul>
+                <li  class="accordian-control"><h2 class="menu-section-subhead accent-color-1">CHUTNEY &amp; YOGOURT<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CHUTNEY MANGUE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">YOGOURT CORIANDRE-MENTHE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">YOGOURT BLANC</p>
+                        <p class="menu-price">01</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">NAAN &amp; PAPADUM<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">NATURE</p>
-                      <p class="menu-price">1.25</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">&Agrave; L&#8217;AIL</p>
-                      <p class="menu-price">1.25</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">PAPADUM (4)</p>
-                      <p class="menu-price">0.75</p>
-                    </li>
-                  </ul>
+                <li  class="accordian-control"><h2 class="menu-section-subhead accent-color-1">NAAN &amp; PAPADUM<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">NATURE</p>
+                        <p class="menu-price">1.25</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">&Agrave; L&#8217;AIL</p>
+                        <p class="menu-price">1.25</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">PAPADUM (4)</p>
+                        <p class="menu-price">0.75</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">LASSI<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">LASSI NATURE</p>
-                      <p class="menu-price">3.5</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">LASSI &Agrave; LA ROSE</p>
-                      <p class="menu-price">3.5</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">LASSI CHAI</p>
-                      <p class="menu-price">04</p>
-                    </li>
-                  </ul>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">LASSI<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LASSI NATURE</p>
+                        <p class="menu-price">3.5</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LASSI &Agrave; LA ROSE</p>
+                        <p class="menu-price">3.5</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LASSI CHAI</p>
+                        <p class="menu-price">04</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">TH&Eacute;<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">TH&Eacute; NOIR</p>
-                      <p class="menu-price">02</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">TH&Eacute; JASMIN</p>
-                      <p class="menu-price">02</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">TH&Eacute; CHAI</p>
-                      <p class="menu-price">2.5</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">CHAI LATT&Eacute;</p>
-                      <p class="smaller-text accent-color-3">(chaud ou froid)</p>
-                      <p class="menu-price">03</p>
-                    </li>
-                  </ul>
+                <li  class="accordian-control"><h2 class="menu-section-subhead accent-color-1">TH&Eacute;<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">TH&Eacute; NOIR</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">TH&Eacute; JASMIN</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">TH&Eacute; CHAI</p>
+                        <p class="menu-price">2.5</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CHAI LATT&Eacute;</p>
+                        <p class="smaller-text accent-color-3">(chaud ou froid)</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">LIMONADE &amp; JUS<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">CONCOMBRE-MENTHE</p>
-                      <p class="menu-price">02</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">LAVANDE-ROMARIN</p>
-                      <p class="menu-price">02</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">&Agrave; LA ROSE</p>
-                      <p class="menu-price">02</p>
-                    </li>
-                  </ul>
+                <li  class="accordian-control"><h2 class="menu-section-subhead accent-color-1">LIMONADE &amp; JUS<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CONCOMBRE-MENTHE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LAVANDE-ROMARIN</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">&Agrave; LA ROSE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><h2 class="menu-section-subhead accent-color-1">DESSERTS<span class="alignright">+</span></h2>
-                  <ul class="menu-category no-padding">
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">SALADE DE FRUIT</p>
-                      <p class="menu-price">05</p>
-                    </li>
-                    <li class="accordian-menu-item">
-                      <p class="menu-item">DESSERT DU JOUR</p>
-                      <p class="menu-price">03</p>
-                    </li>
-                  </ul>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">DESSERTS<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SALADE DE FRUIT</p>
+                        <p class="menu-price">05</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">DESSERT DU JOUR</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </section>
@@ -332,7 +354,7 @@
           </div>
         </div>
       </div>
-      <section id="photosSection">
+      <section id="photosSection" class="nav-link">
         <div class="row">
           <div class="twelve columns">
             <img src="images/photo-1.jpg" alt="interior photo of &Eacute;l&eacute;phant Restaurant">
@@ -344,7 +366,7 @@
       </section>
     </main>
     <footer class="footer-contact reverse">
-      <section id="contactSection">
+      <section id="contactSection" class="nav-link">
         <div class="row">
           <h1 class="twelve columns">NOUS JOINDRE</h1>
         </div>
@@ -410,8 +432,10 @@
         </div>
       </section>
     </footer>
-
-<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/main.js"></script>
+<!--    <script src="js/scrollspy.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
     <script>window.jQuery || document.write(&#8217;<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>&#8217;)</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script> -->

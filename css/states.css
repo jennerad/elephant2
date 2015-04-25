@@ -14,12 +14,32 @@ a {
   color: #F6AF33;
 }
 
+/*.scrollspy-selected {
+  color: #32BAAE;
+}
+*/
+.hidden {
+  display: none;
+}
+
  /*Use JS to toggle both of these when each accordian-menu-item is clicked. */
 
-.accordian-menu-item{
-  /*display: none;*/
+.accordian-panel{
+  display: none;
 }
 
 .accordian-menu-item:last-child {
   padding-bottom: 25px;
-;
+}
+
+.accordian-control {
+    text-decoration: none;
+}
+
+.accordian-minus:after {
+    content: '-';
+}
+
+.accordian-plus:after {
+    content: '+';
+}
