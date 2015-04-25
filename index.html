@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="fr">
   <head>
     <title>Semantic rebuild of http://resto-elephant.com/</title>
     <meta charset="utf-8">
@@ -7,362 +7,435 @@
     <meta name="description" content="Éléphant, Indian restaurant in Trois-Rivieres, Quebec">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- favicons -->
-      <link rel="shortcut icon" href="favicon.ico">
-      <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-      <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-      <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-      <link rel="manifest" href="/manifest.json">
-      <meta name="msapplication-TileColor" content="#603cba">
-      <meta name="theme-color" content="#ffffff">
+    <!-- favfooter-icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- typefaces -->
     <link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
-    <!--    <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/states.css">
+        <link rel="stylesheet" href="css/base.css">
+
+
   </head>
-  <body>
+  <body class="container">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header>
-      <section class="top-banner">
-        <h1 class="alignleft">&Eacute;L&Eacute;PHANT</h1>
-        <nav class="top-navigation alignright">
+    <header id="navWrapper" class="hidden row fixed-header">
+      <div class="three columns">
+        <h1 class="logo"><a href="#heroSection" class="top-navigation-link">&Eacute;L&Eacute;PHANT</a></h1>
+      </div>
+      <div class="nine columns">
+        <nav id-"nav" class="alignright">
           <ul>
-            <li><a href="#aboutSection">&agrave; propos</a></li>
-            <img src="graphics/bullet-diamond.png" alt="decorative bullet" class="bullet-diamond">
-            <li><a href="#menuSection">menu</a></li>
-            <img src="graphics/bullet-diamond.png" alt="decorative bullet" class="bullet-diamond">
-            <li><a href="#photosSection">photos</a></li>
-            <img src="graphics/bullet-diamond.png" alt="decorative bullet" class="bullet-diamond">
-            <li><a href="#contactSection">nous joindre</a></li>
-            <img src="graphics/bullet-diamond.png" alt="decorative bullet" class="bullet-diamond">
-            <li><a href="http://www.facebook.com/restaurantelephant"><img class="facebook-icon" src="graphics/f-black.png" alt="go to our facebook page"></a></li>
+            <li class="top-navigation-item"><a href="#aboutSection" class="top-navigation-link">&agrave; propos</a></li>
+            <!-- <img src="graphics/bullet-diamond.png" alt="decorative bullet" class="bullet-diamond"> -->
+            <li class="top-navigation-item"><a href="#menuSection" class="top-navigation-link">menu</a></li>
+            <!-- <img src="graphics/bullet-diamond.png" alt="decorative bullet" class="bullet-diamond"> -->
+            <li class="top-navigation-item"><a href="#photosSection" class="top-navigation-link">photos</a></li>
+            <!-- <img src="graphics/bullet-diamond.png" alt="decorative bullet" class="bullet-diamond"> -->
+            <li class="top-navigation-item"><a href="#contactSection" class="top-navigation-link">nous joindre</a></li>
+            <!-- <img src="graphics/bullet-diamond.png" alt="decorative bullet" class="bullet-diamond"> -->
+            <li class="top-navigation-item"><a href="http://www.facebook.com/restaurantelephant" class="top-navigation-link"><img class="footer-icons" src="graphics/f-black.png" alt="go to our facebook page"></a></li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
     <main>
-      <section id="aboutSection" class="about-section">
-        <p class="decorative-head">- D&Eacute;COUVREZ -</p>
-        <h1>NOTRE HISTOIRE</h1>
-        <p>&Eacute;l&eacute;phant, le tout premier restaurant Indien en Mauricie, offre une cuisine fra&icirc;che et honn&ecirc;te mettant &agrave; l&#8217;honneur les produits d&#8217;ici et les saveurs Indiennes. Une &eacute;quipe jeune, passionn&eacute;e et cr&eacute;ative travaillant toujours avec plaisir avec les aliments frais et une multitude d&#8217;&eacute;pices de qualit&eacute; pour concocter des plats simples, faisant preuve d&#8217;une profondeur aromatique et d&#8217;un souci du travail bien fait. Le d&eacute;cor minimaliste et &eacute;clectique compos&eacute; de plusieurs &eacute;l&eacute;ments recycl&eacute;s, bruts et remani&eacute;s invite &agrave; la convivialit&eacute; et &agrave; la familiarit&eacute;. Un projet cr&eacute;&eacute; de toute pi&eacute;ce pour avant tout partager une passion pour la cuisine, le plaisir de la table et l&#8217;importance de prendre ce temps privil&eacute;gi&eacute; pour s&#8217;arr&ecirc;ter autour d&#8217;un repas avec ses proches.</p>
+      <div class="hero" id="heroSection">
+      </div>
+      <section id="aboutSection" class="about-section bigger-text centered">
+        <div class="row">
+          <div class="twelve columns">
+            <p class="section-head-decorative accent-color-1 centered">- D&Eacute;COUVREZ -</p>
+            <h1 class="section-head accent-color-2">NOTRE HISTOIRE</h1>
+            <p>&Eacute;l&eacute;phant, le tout premier restaurant Indien en Mauricie, offre une cuisine fra&icirc;che et honn&ecirc;te mettant &agrave; l&#8217;honneur les produits d&#8217;ici et les saveurs Indiennes. Une &eacute;quipe jeune, passionn&eacute;e et cr&eacute;ative travaillant toujours avec plaisir avec les aliments frais et une multitude d&#8217;&eacute;pices de qualit&eacute; pour concocter des plats simples, faisant preuve d&#8217;une profondeur aromatique et d&#8217;un souci du travail bien fait. Le d&eacute;cor minimaliste et &eacute;clectique compos&eacute; de plusieurs &eacute;l&eacute;ments recycl&eacute;s, bruts et remani&eacute;s invite &agrave; la convivialit&eacute; et &agrave; la familiarit&eacute;. Un projet cr&eacute;&eacute; de toute pi&eacute;ce pour avant tout partager une passion pour la cuisine, le plaisir de la table et l&#8217;importance de prendre ce temps privil&eacute;gi&eacute; pour s&#8217;arr&ecirc;ter autour d&#8217;un repas avec ses proches.</p>
+          </div>
+        </div>
       </section>
-      <section class="windowSection window-two">
-      </section>
-      <section id="menuSection">
-        <section class="menu-section">
-          <h1>NOTRE MENU</h1>
-          <p>Menu midi à l&#8217;ardoise, changeant à toutes les semaines selon la saison et les arrivages locaux. Possibilité de "take-out" midi &amp; soir, servi dans des contenants écologiques.</p>
-          <p><a href="http://www.facebook.com/restaurantelephant">Visitez notre page facebook</a> pour voir notre formule midi.</p>
-          <ul>
-            <li><h2>SOUPES<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">SOUP DU JOUR</p>
-                  <p class="menu-price">03</p>
+      <div class="divider-image-section divider-image-one">
+      </div>
+      <section id="menuSection" class="nav-link">
+        <div class="row">
+          <div class="six columns">
+            <section class="bigger-text">
+              <h1 class="section-head accent-color-2">NOTRE MENU</h1>
+              <p>Menu midi à l&#8217;ardoise, changeant à toutes les semaines selon la saison et les arrivages locaux. Possibilité de "take-out" midi &amp; soir, servi dans des contenants écologiques.</p>
+              <p><a class="accent-color-1" href="http://www.facebook.com/restaurantelephant">Visitez notre page facebook</a> pour voir notre formule midi.</p>
+              <ul class="no-padding accordian">
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">SOUPES<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SOUP DU JOUR</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">COURGE CAROTTE</p>
+                        <p class="smaller-text accent-color-3">Courge butternut, coco.</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LENTILLES, BOUILLON D&#8217;AGNEAU</p>
+                        <p class="smaller-text accent-color-3">L&eacute;gumes, piments forts.</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li>
-                  <p class="menu-item">COURGE CAROTTE</p>
-                  <p class="menu-desc">Courge butternut, coco.</p>
-                  <p class="menu-price">03</p>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">ENTR&Eacute;ES<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SAMOSA AGNEAU</p>
+                        <p class="smaller-text accent-color-3">Pois, pommes de terre, citron.</p>
+                        <p class="menu-price">04</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">FISH CAKES</p>
+                        <p class="smaller-text accent-color-3">Croquettes de poisson, herbes fraîches, mayo &eacute;pic&eacute;e.</p>
+                        <p class="menu-price">05</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CRAB CAKES</p>
+                        <p class="smaller-text accent-color-3">Croquettes de crabe, mayo &eacute;pic&eacute;e.</p>
+                        <p class="menu-price">05</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">HUMMUS</p>
+                        <p class="smaller-text accent-color-3">Taboul&eacute; chou-fleur, oignons confits.</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SALADE FRA&Icirc;CHE</p>
+                        <p class="smaller-text accent-color-3">Mesclun, l&eacute;gumes croquants, dattes.</p>
+                        <p class="menu-price">04</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">FISH PAKORA</p>
+                        <p class="smaller-text accent-color-3">Mahi mahi frit, paprika fum&eacute;.</p>
+                        <p class="menu-price">05</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li>
-                  <p class="menu-item">LENTILLES, BOUILLON D&#8217;AGNEAU</p>
-                  <p class="menu-desc">L&eacute;gumes, piments forts.</p>
-                  <p class="menu-price">03</p>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">VEGAN<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CURRY L&Eacute;GUMES</p>
+                        <p class="smaller-text accent-color-3">Lait de coco, curry vert.</p>
+                        <p class="menu-price">08</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">DHAL</p>
+                        <p class="smaller-text accent-color-3">Mijot&eacute; de lentilles, l&eacute;gumes.</p>
+                        <p class="menu-price">07</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CURRY POIS CHICHES</p>
+                        <p class="smaller-text accent-color-3">Coco, cardamome, tamarin.</p>
+                        <p class="menu-price">08</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SALADE NOIX-DATTES</p>
+                        <p class="smaller-text accent-color-3">Mesclun, l&eacute;gumes croquants.</p>
+                        <p class="menu-price">09</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">CURRY<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">POULET AU BEURRE</p>
+                        <p class="smaller-text accent-color-3">Sauce cr&eacute;meuse, cardamome.</p>
+                        <p class="menu-price">13</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">AGNEAU KORMA</p>
+                        <p class="smaller-text accent-color-3">Sauce au yogourt, noix torr&eacute;fi&eacute;es.</p>
+                        <p class="menu-price">15</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CURRY VERT DE CREVETTES</p>
+                        <p class="smaller-text accent-color-3">Lime k&eacute;fir, citronelle, basilic tha&iuml;.</p>
+                        <p class="menu-price">12</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">POISSON MANGUE &amp; YOGOURT</p>
+                        <p class="smaller-text accent-color-3">Poisson blanc, sauce tomat&eacute;e.</p>
+                        <p class="menu-price">12</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">POPEYE PANEER</p>
+                        <p class="smaller-text accent-color-3">Pur&eacute;e d&#8217;&eacute;pinards, piments forts, fromage grill&eacute;.</p>
+                        <p class="menu-price">09</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">PILON DE POULET TIKA</p>
+                        <p class="smaller-text accent-color-3">&Eacute;pices tika masala, citron, mayo.</p>
+                        <p class="menu-price">12</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">RIZ<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CITRON-CANNELLE-CURCUMA</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SAFRAN-GIROFLE</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">NATURE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li  class="accordian-control"><h2 class="menu-section-subhead accent-color-1">CHUTNEY &amp; YOGOURT<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CHUTNEY MANGUE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">YOGOURT CORIANDRE-MENTHE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">YOGOURT BLANC</p>
+                        <p class="menu-price">01</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li  class="accordian-control"><h2 class="menu-section-subhead accent-color-1">NAAN &amp; PAPADUM<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">NATURE</p>
+                        <p class="menu-price">1.25</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">&Agrave; L&#8217;AIL</p>
+                        <p class="menu-price">1.25</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">PAPADUM (4)</p>
+                        <p class="menu-price">0.75</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">LASSI<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LASSI NATURE</p>
+                        <p class="menu-price">3.5</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LASSI &Agrave; LA ROSE</p>
+                        <p class="menu-price">3.5</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LASSI CHAI</p>
+                        <p class="menu-price">04</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li  class="accordian-control"><h2 class="menu-section-subhead accent-color-1">TH&Eacute;<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">TH&Eacute; NOIR</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">TH&Eacute; JASMIN</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">TH&Eacute; CHAI</p>
+                        <p class="menu-price">2.5</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CHAI LATT&Eacute;</p>
+                        <p class="smaller-text accent-color-3">(chaud ou froid)</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li  class="accordian-control"><h2 class="menu-section-subhead accent-color-1">LIMONADE &amp; JUS<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">CONCOMBRE-MENTHE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">LAVANDE-ROMARIN</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">&Agrave; LA ROSE</p>
+                        <p class="menu-price">02</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordian-control"><h2 class="menu-section-subhead accent-color-1">DESSERTS<span class="alignright accordian-menu-button accordian-plus"></span></h2>
+                  <div class="accordian-panel">
+                    <ul class="no-padding">
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">SALADE DE FRUIT</p>
+                        <p class="menu-price">05</p>
+                      </li>
+                      <li class="accordian-menu-item">
+                        <p class="menu-item">DESSERT DU JOUR</p>
+                        <p class="menu-price">03</p>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
-            </li>
-            <li><h2>ENTR&Eacute;ES<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">SAMOSA AGNEAU</p>
-                  <p class="menu-desc">Pois, pommes de terre, citron.</p>
-                  <p class="menu-price">04</p>
-                </li>
-                <li>
-                  <p class="menu-item">FISH CAKES</p>
-                  <p class="menu-desc">Croquettes de poisson, herbes fraîches, mayo &eacute;pic&eacute;e.</p>
-                  <p class="menu-price">05</p>
-                </li>
-                <li>
-                  <p class="menu-item">CRAB CAKES</p>
-                  <p class="menu-desc">Croquettes de crabe, mayo &eacute;pic&eacute;e.</p>
-                  <p class="menu-price">05</p>
-                </li>
-                <li>
-                  <p class="menu-item">HUMMUS</p>
-                  <p class="menu-desc">Taboul&eacute; chou-fleur, oignons confits.</p>
-                  <p class="menu-price">03</p>
-                </li>
-                <li>
-                  <p class="menu-item">SALADE FRA&Icirc;CHE</p>
-                  <p class="menu-desc">Mesclun, l&eacute;gumes croquants, dattes.</p>
-                  <p class="menu-price">04</p>
-                </li>
-                <li>
-                  <p class="menu-item">FISH PAKORA</p>
-                  <p class="menu-desc">Mahi mahi frit, paprika fum&eacute;.</p>
-                  <p class="menu-price">05</p>
-                </li>
-              </ul>
-            </li>
-            <li><h2>VEGAN<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">CURRY L&Eacute;GUMES</p>
-                  <p class="menu-desc">Lait de coco, curry vert.</p>
-                  <p class="menu-price">08</p>
-                </li>
-                <li>
-                  <p class="menu-item">DHAL</p>
-                  <p class="menu-desc">Mijot&eacute; de lentilles, l&eacute;gumes.</p>
-                  <p class="menu-price">07</p>
-                </li>
-                <li>
-                  <p class="menu-item">CURRY POIS CHICHES</p>
-                  <p class="menu-desc">Coco, cardamome, tamarin.</p>
-                  <p class="menu-price">08</p>
-                </li>
-                <li>
-                  <p class="menu-item">SALADE NOIX-DATTES</p>
-                  <p class="menu-desc">Mesclun, l&eacute;gumes croquants.</p>
-                  <p class="menu-price">09</p>
-                </li>
-              </ul>
-            </li>
-            <li><h2>CURRY<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">POULET AU BEURRE</p>
-                  <p class="menu-desc">Sauce cr&eacute;meuse, cardamome.</p>
-                  <p class="menu-price">13</p>
-                </li>
-                <li>
-                  <p class="menu-item">AGNEAU KORMA</p>
-                  <p class="menu-desc">Sauce au yogourt, noix torr&eacute;fi&eacute;es.</p>
-                  <p class="menu-price">15</p>
-                </li>
-                <li>
-                  <p class="menu-item">CURRY VERT DE CREVETTES</p>
-                  <p class="menu-desc">Lime k&eacute;fir, citronelle, basilic tha&iuml;.</p>
-                  <p class="menu-price">12</p>
-                </li>
-                <li>
-                  <p class="menu-item">POISSON MANGUE &amp; YOGOURT</p>
-                  <p class="menu-desc">Poisson blanc, sauce tomat&eacute;e.</p>
-                  <p class="menu-price">12</p>
-                </li>
-                <li>
-                  <p class="menu-item">POPEYE PANEER</p>
-                  <p class="menu-desc">Pur&eacute;e d&#8217;&eacute;pinards, piments forts, fromage grill&eacute;.</p>
-                  <p class="menu-price">09</p>
-                </li>
-                <li>
-                  <p class="menu-item">PILON DE POULET TIKA</p>
-                  <p class="menu-desc">&Eacute;pices tika masala, citron, mayo.</p>
-                  <p class="menu-price">12</p>
-                </li>
-              </ul>
-            </li>
-            <li><h2>RIZ<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">CITRON-CANNELLE-CURCUMA</p>
-                  <p class="menu-price">02</p>
-                </li>
-                <li>
-                  <p class="menu-item">SAFRAN-GIROFLE</p>
-                  <p class="menu-price">03</p>
-                </li>
-                <li>
-                  <p class="menu-item">NATURE</p>
-                  <p class="menu-price">02</p>
-                </li>
-              </ul>
-            </li>
-            <li><h2>CHUTNEY &amp; YOGOURT<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">CHUTNEY MANGUE</p>
-                  <p class="menu-price">02</p>
-                </li>
-                <li>
-                  <p class="menu-item">YOGOURT CORIANDRE-MENTHE</p>
-                  <p class="menu-price">02</p>
-                </li>
-                <li>
-                  <p class="menu-item">YOGOURT BLANC</p>
-                  <p class="menu-price">01</p>
-                </li>
-              </ul>
-            </li>
-            <li><h2>NAAN &amp; PAPADUM<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">NATURE</p>
-                  <p class="menu-price">1.25</p>
-                </li>
-                <li>
-                  <p class="menu-item">&Agrave; L&#8217;AIL</p>
-                  <p class="menu-price">1.25</p>
-                </li>
-                <li>
-                  <p class="menu-item">PAPADUM (4)</p>
-                  <p class="menu-price">0.75</p>
-                </li>
-              </ul>
-            </li>
-            <li><h2>LASSI<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">LASSI NATURE</p>
-                  <p class="menu-price">3.5</p>
-                </li>
-                <li>
-                  <p class="menu-item">LASSI &Agrave; LA ROSE</p>
-                  <p class="menu-price">3.5</p>
-                </li>
-                <li>
-                  <p class="menu-item">LASSI CHAI</p>
-                  <p class="menu-price">04</p>
-                </li>
-              </ul>
-            </li>
-            <li><h2>TH&Eacute;<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">TH&Eacute; NOIR</p>
-                  <p class="menu-price">02</p>
-                </li>
-                <li>
-                  <p class="menu-item">TH&Eacute; JASMIN</p>
-                  <p class="menu-price">02</p>
-                </li>
-                <li>
-                  <p class="menu-item">TH&Eacute; CHAI</p>
-                  <p class="menu-price">2.5</p>
-                </li>
-                <li>
-                  <p class="menu-item">CHAI LATT&Eacute;</p>
-                  <p class="menu-desc">(chaud ou froid)</p>
-                  <p class="menu-price">03</p>
-                </li>
-              </ul>
-            </li>
-            <li><h2>LIMONADE &amp; JUS<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">CONCOMBRE-MENTHE</p>
-                  <p class="menu-price">02</p>
-                </li>
-                <li>
-                  <p class="menu-item">LAVANDE-ROMARIN</p>
-                  <p class="menu-price">02</p>
-                </li>
-                <li>
-                  <p class="menu-item">&Agrave; LA ROSE</p>
-                  <p class="menu-price">02</p>
-                </li>
-              </ul>
-            </li>
-            <li><h2>DESSERTS<span class="alignright">-</span></h2>
-              <ul>
-                <li>
-                  <p class="menu-item">SALADE DE FRUIT</p>
-                  <p class="menu-price">05</p>
-                </li>
-                <li>
-                  <p class="menu-item">DESSERT DU JOUR</p>
-                  <p class="menu-price">03</p>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section class="menu-carousel">
-          <p class="featured">PLATS POUR <span>EMPORTER</span></p>
-          <img src="images/img-slider-1.jpg" alt="a photo of...">
-          <!-- <img src="images/img-slider-2.jpg" alt="a photo of..."> -->
-          <!-- <img src="images/img-slider-3.jpg" alt="a photo of..."> -->
-          <!-- <img src="images/img-slider-4.jpg" alt="a photo of..."> -->
+            </section>
+          </div>
+          <div class="six columns">
+            <section class="photo-carousel">
+              <img src="images/img-slider-1.jpg" alt="a photo of...">
+              <!-- <img src="images/img-slider-2.jpg" alt="a photo of..."> -->
+              <!-- <img src="images/img-slider-3.jpg" alt="a photo of..."> -->
+              <!-- <img src="images/img-slider-4.jpg" alt="a photo of..."> -->
 
-          <blockquote><strong class="alignleft">&ldquo;</strong><br><br>ENFIN LES SAVEURS FRANCHES ET COMPLEXES DE CETTE MERVEILLEUSE GASTRONOMIE SE RETROUVENT DANS UN RESTAURANT TRIFLUVIEN PLUS QUE DIFF&Eacute;RENT, DU D&Eacute;COR JUSQU&#8217;AUX PLATS.<br><strong class="alignright">&rdquo;</strong></blockquote>
-        </section>
+              <blockquote class="centered"><span class="pullquote open-pullquote accent-color-3 alignleft">&ldquo;</span>ENFIN LES SAVEURS FRANCHES ET COMPLEXES DE CETTE MERVEILLEUSE GASTRONOMIE SE RETROUVENT DANS UN RESTAURANT TRIFLUVIEN PLUS QUE DIFF&Eacute;RENT, DU D&Eacute;COR JUSQU&#8217;AUX PLATS.<span class="pullquote close-pullquote accent-color-3 alignright">&rdquo;</span></blockquote>
+            </section>
+          </div>
+        </div>
       </section>
-      <section class="wineSection">
-        <!-- <img src="graphics/squiggle.png" alt="bring your own wine"> -->
-        <h2>N&#8217;OUBLIEZ PAS D&#8217;APPORTER VOTRE VIN</h2>
-        <!-- <img src="graphics/squiggle.png" alt="bring your own wine"> -->
+      <section class="graphic-section clear">
+        <div class="row">
+          <div class="twelve columns">
+            <!-- <img src="graphics/squiggle.png" alt="bring your own wine"> -->
+            <h2 class="graphic-section-subhead accent-color-1">N&#8217;OUBLIEZ PAS D&#8217;APPORTER VOTRE VIN</h2>
+            <!-- <img src="graphics/squiggle.png" alt="bring your own wine"> -->
+          </div>
+        </div>
       </section>
-      <section class="windowSection window-two">
-      </section>
-      <section id="photosSection">
-        <img src="images/photo-1.jpg" alt="interior photo of &Eacute;l&eacute;phant Restaurant">
-        <img src="images/photo-2.jpg" alt="interior photo of &Eacute;l&eacute;phant Restaurant">
-        <img src="images/photo-3.jpg" alt="interior photo of &Eacute;l&eacute;phant Restaurant">
-        <img src="images/photo-4.jpg" alt="interior photo of &Eacute;l&eacute;phant Restaurant">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="divider-image-section divider-image-two">
+          </div>
+        </div>
+      </div>
+      <section id="photosSection" class="nav-link">
+        <div class="row">
+          <div class="twelve columns">
+            <img src="images/photo-1.jpg" alt="interior photo of &Eacute;l&eacute;phant Restaurant">
+            <img src="images/photo-2.jpg" alt="interior photo of &Eacute;l&eacute;phant Restaurant">
+            <img src="images/photo-3.jpg" alt="interior photo of &Eacute;l&eacute;phant Restaurant">
+            <img src="images/photo-4.jpg" alt="interior photo of &Eacute;l&eacute;phant Restaurant">
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <section id="contactSection" class="contact-section">
-        <h1>NOUS JOINDRE</h1>
-        <section class="contact-street">
-          <h2>ADRESSE</h2>
-          <a href="#" target="_blank">
-            <img class="footer-icons" src="graphics/map-icon-white.png" alt="click for map">
-            <h3>&Eacute;L&Eacute;PHANT</h3>
-            <p>830 boulevard des R&eacute;collets</p>
-            <p>Trois-Rivières, Qc G8z 3w2</p>
-          </a>
-        </section>
-        <section class="contact-phone">
-          <img class="footer-icons" src="graphics/phone-icon-white.png" alt="our phone number">
-          <h3>819.840.6923</h3>
-          <p>Veuillez prendre note que nous ne</p>
-          <p>prenons pas de r&eacute;servation</p>
-        </section>
-        <section class="contact-email">
-          <a href="mailto:info@resto-elephant.com">
-            <img src="graphics/email-icon-white.png" alt="click to email us">
-            <h3>info@resto-elephant.com</h3>
-          </a>
-        </section>
-        <section class="contact-social">
-          <img src="graphics/f-white.png" alt="click for map">
-          <a href="#" target="_blank">
-            <h3>&#47;restaurantelephant</h3>
-          </a>
-        </section>
-        <section class="contact-hours">
-          <h2>HEURES D&#8217;OUVERTURE</h2>
-          <img src="graphics/hours-icon-white.png" alt="restaurant hours"><h3>MIDI</h3>
-          <p>Lundi au vendredi</p>
-          <p>de 11h30 &agrave; 14h30</p>
-          <h3>SOIR</h3>
-          <p>Mercredi &agrave; samedi</p>
-          <p>de 17h30 &agrave; 21h</p>
-        </section>
-        <section class="contact-map clearfix">
-          <img src="graphics/map.png" alt="Map showing location of Restaurant &Eacute;l&eacute;phant">
-        </section>
+    <footer class="footer-contact reverse">
+      <section id="contactSection" class="nav-link">
+        <div class="row">
+          <h1 class="twelve columns">NOUS JOINDRE</h1>
+        </div>
+        <div class="row">
+          <div class="three columns">
+            <section>
+              <h2 class="footer-subhead accent-color-2">ADRESSE</h2>
+              <a href="#" target="_blank">
+                <img class="footer-icons" src="graphics/map-icon-white.png" alt="click for map">
+                <h3 class="footer-topic no-padding reverse">&Eacute;L&Eacute;PHANT</h3>
+                <p class="footer-details no-padding reverse smaller-text">830 boulevard des R&eacute;collets</p>
+                <p class="footer-details no-padding reverse smaller-text">Trois-Rivières, Qc G8z 3w2</p>
+              </a>
+            </section>
+            <section>
+              <img class="footer-icons" src="graphics/phone-icon-white.png" alt="our phone number">
+              <h3 class="footer-topic no-padding reverse">819.840.6923</h3>
+            </section>
+            <section>
+              <a href="mailto:info@resto-elephant.com">
+                <img class="footer-icons" src="graphics/email-icon-white.png" alt="click to email us">
+                <h3 class="footer-topic no-padding reverse smaller-text">info@resto-elephant.com</h3>
+              </a>
+            </section>
+            <section>
+              <img class="footer-icons" src="graphics/f-white.png" alt="click for map">
+              <a href="#" target="_blank">
+                <h3 class="footer-topic no-padding reverse">&#47;restaurantelephant</h3>
+              </a>
+            </section>
+          </div>
+          <div class="three columns">
+            <section>
+              <h2 class="footer-subhead accent-color-2">HEURES D&#8217;OUVERTURE</h2>
+              <img class="footer-icons" src="graphics/hours-icon-white.png" alt="restaurant hours"><h3 class="footer-topic no-padding">MIDI</h3>
+              <p class="footer-details no-padding smaller-text reverse">Lundi au vendredi</p>
+              <p class="footer-details no-padding smaller-text reverse">de 11h30 &agrave; 14h30</p>
+              <h3 class="footer-topic no-padding">SOIR</h3>
+              <p class="footer-details no-padding smaller-text reverse">Mercredi &agrave; samedi</p>
+              <p class="footer-details no-padding smaller-text reverse">de 17h30 &agrave; 21h</p>
+            </section>
+          </div>
+          <div class="six columns">
+            <section>
+              <img class="contact-map" src="graphics/map.png" alt="Map showing location of Restaurant &Eacute;l&eacute;phant">
+            </section>
+          </div>
+        </div>
       </section>
-      <section class="colophon">
-        <img src="graphics/pattern-bottom.svg" alt="Restaurant &Eacute;l&eacute;phant">
-        <p class="alignleft">&copy; Restaurant &Eacute;l&eacute;phant, 2015. Tous droits r&eacute;serv&eacute;s.</p>
-        <p class="alignright">R&eacute;alization de Pier-Luc Cossette</p>
+      <section class="no-padding reverse">
+        <div class="row">
+          <div class=" twelve columns">
+            <img class="graphic-fullwidth" src="graphics/pattern-bottom2.svg" alt="Restaurant &Eacute;l&eacute;phant">
+          </div>
+          <div class="row">
+            <div class="six columns">
+            <p class="alignleft reverse smaller-text">&copy; Restaurant &Eacute;l&eacute;phant, 2015. Tous droits r&eacute;serv&eacute;s.</p>
+            </div>
+            <div class="six columns">
+              <p class="alignright reverse smaller-text">R&eacute;alization de Pier-Luc Cossette</p>
+            </div>
+          </div>
+        </div>
       </section>
     </footer>
-
-<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/main.js"></script>
+<!--    <script src="js/scrollspy.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
     <script>window.jQuery || document.write(&#8217;<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>&#8217;)</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script> -->
